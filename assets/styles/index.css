@@ -1,59 +1,87 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	background-color: #ffd2dd;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffd2dd;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .desktop-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .logo img {
-	width: 100px;
-	border-radius: 50%;
+  width: 100px;
+  border-radius: 50%;
 }
 
 .desktop-nav ul {
-	display: flex;
-	list-style: none;
-	gap: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav ul {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
 }
 
 h1 {
-	font-size: 36px;
-	font-weight: 700;
-	margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 h2 {
-	font-size: 24px;
-	font-weight: 700;
-	margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 h3 {
-	font-size: 18px;
-	font-weight: 700;
-	margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 a {
-	text-decoration: none;
-	color: #000;
+  text-decoration: none;
+  color: #000;
 }
