@@ -120,21 +120,39 @@ a {
 /* !                                 CONTENT                                  */
 /* ! ------------------------------------------------------------------------ */
 
-header {
+body {
   background-color: #ffc0cb;
   color: #000;
-  padding: 22rem 0;
+  background-image: url(../img/pexels-eberhard-grossgasteiger-2088170.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+header {
+  padding-top: 10rem;
+  padding-bottom: 44;
 }
 
 .logo {
   border-radius: 50%;
-
 }
 
 .btn {
   text-align: center;
   display: inline-block;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #c0cbff;
   border-radius: 5rem;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.content > * + * {
+  margin-top: 4rem;
 }
