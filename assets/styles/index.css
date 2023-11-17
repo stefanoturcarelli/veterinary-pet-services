@@ -68,7 +68,7 @@ picture,
 video,
 canvas,
 svg {
-  displagpadding: 8rem 0;
+  display: block;
   max-width: 100%;
 }
 
@@ -115,6 +115,10 @@ a {
   margin-inline: auto;
   box-sizing: border-box;
 }
+
+/* ! ------------------------------------------------------------------------ */
+/* !                                 CONTENT                                  */
+/* ! ------------------------------------------------------------------------ */
 
 /* ! ------------------------------------------------------------------------ */
 /* ! Body
@@ -205,10 +209,6 @@ header {
 .hero-banner-content p {
   font-size: 2rem;
   line-height: 0.5;
-}
-
-.hero-banner-content div {
-  /* outline: auto; */
 }
 
 .call-to-action {
