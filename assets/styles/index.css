@@ -68,7 +68,7 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
+  displagpadding: 8rem 0;
   max-width: 100%;
 }
 
@@ -117,42 +117,161 @@ a {
 }
 
 /* ! ------------------------------------------------------------------------ */
-/* !                                 CONTENT                                  */
+/* ! Body
 /* ! ------------------------------------------------------------------------ */
 
 body {
-  background-color: #ffc0cb;
+  background-color: #fff;
   color: #000;
-  background-image: url(../img/pexels-eberhard-grossgasteiger-2088170.jpg);
-  background-size: cover;
-  text-align: center;
 }
 
+section {
+  padding: 8rem 0;
+  height: 100dvh;
+}
+
+/* ! ------------------------------------------------------------------------ */
+/* ! Header
+/* ! ------------------------------------------------------------------------ */
+
 header {
-  padding-top: 10rem;
-  padding-bottom: 44;
+  padding: 4rem 0;
+  position: relative;
 }
 
 .logo {
   border-radius: 50%;
+  width: 6rem;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-and-title h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-bar {
+  background-color: #ffc0cb;
+  border-radius: 4rem;
+  padding: 2rem 4rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  width: fit-content;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+.nav-bar a {
+  /* display: inline-block; */
+  font-size: 2rem;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav-bar a:hover {
+  color: #fff;
+}
+
+/* ! ------------------------------------------------------------------------ */
+/* ! Section Hero Banner
+/* ! ------------------------------------------------------------------------ */
+
+.hero-banner {
+  background-image: url(../img/dog.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 20%;
+}
+
+.hero-banner-content {
+  /* outline: auto; */
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner-content h1 {
+  font-size: 7rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.hero-banner-content p {
+  font-size: 2rem;
+  line-height: 0.5;
+}
+
+.hero-banner-content div {
+  /* outline: auto; */
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 60rem;
+}
+
+.dog {
+  /* outline: auto; */
+  width: 50rem;
+}
+
+.reviews {
+  background-color: #c0ebff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  padding: 3rem 3rem 3rem 5rem;
+  border-radius: 1rem;
+}
+
+.reviews-images {
+  display: flex;
+}
+
+.reviews-images img {
+  width: 6rem;
+  border-radius: 50%;
+  margin-left: -2rem;
+}
+
+.reviews-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: -2rem;
+}
+
+.more-than-100 {
+  font-size: 4rem;
 }
 
 .btn {
   text-align: center;
   display: inline-block;
+  padding: 8rem 0;
   padding: 1.5rem;
   background-color: #c0cbff;
   border-radius: 5rem;
+  transition: 0.2s all ease-in-out;
 }
 
-h1 {
-  line-height: 1.2;
+.btn:hover {
+  color: #fff;
 }
 
-p {
-  line-height: 1.5;
-}
-
-.content > * + * {
+/* Add space between content */
+/* .content > * + * {
   margin-top: 4rem;
-}
+} */
