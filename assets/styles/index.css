@@ -110,8 +110,8 @@ a {
 }
 
 .container {
-  max-width: 1200px;
-  width: min(100% - 25px, 1080px);
+  max-width: 1280px;
+  /* width: min(100% - 25px, 1080px); */
   margin-inline: auto;
   box-sizing: border-box;
 }
